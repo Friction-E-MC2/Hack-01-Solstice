@@ -15,7 +15,6 @@ twitter.updateTwitter = function(req){
       var tweetObject = data[n];
       div.innerHTML += tweetObject.author;
       div.innerHTML += '<p>' + tweetObject.tweet + '</p>';
-      //console.log(tweetObject);
       i = i + 1;
     }
   }
@@ -27,6 +26,10 @@ twitter.updateTwitter = function(req){
   req["customCallback"] = callback;
 
   twitterFetcher.fetch(req);
+  i=0
 };
 
+window.setInterval(function(){
 twitter.updateTwitter({});
+}, 10000);
+
