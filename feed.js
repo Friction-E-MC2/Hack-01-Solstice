@@ -11,7 +11,7 @@ twitter.updateTwitter = function(req){
     for (var n = 0; n < data.length; n+=1){
       var div = document.createElement('div');
       div.id = i.toString();
-      document.body.appendChild(div);
+       document.getElementById("container").appendChild(div);
       var tweetObject = data[n];
       div.innerHTML += tweetObject.author;
       div.innerHTML += '<p>' + tweetObject.tweet + '</p>';
@@ -29,6 +29,7 @@ twitter.updateTwitter = function(req){
   i=0
 };
 
+twitter.updateTwitter({});
 window.setInterval(function(){
 twitter.updateTwitter({});
 }, 10000);
