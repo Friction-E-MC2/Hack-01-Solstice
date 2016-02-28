@@ -1,0 +1,48 @@
+#site{
+  font-family: helvetica;
+}
+#header{
+  color: #000000;
+  font-size:40px;
+  margin-left:160px;
+  float:left;
+  width:300px;
+}
+#button1{
+    margin-top:30px;
+    margin: 0 auto;
+    border-radius: 19px;
+    padding: 1em;
+    background-color:#00d0ff;
+    max-width:100px;
+    float:right;
+}
+#button2{
+    margin-top:10px;
+    margin: 0 auto;
+    border-radius: 19px;
+    padding: 1em;
+    background-color:#00d0ff;
+    max-width:100px;
+    float:right;
+    clear:right;
+}
+#container{
+    width: auto;
+    margin: 0 auto;
+    border-radius: 19px;
+    padding: 1em;
+    background-color:#ffb900;
+    max-width: 1000px;
+    height:450px;
+    clear:both;
+  
+}
+#main {
+    font-size: 20px;
+    align-content: right; 
+}
+#footer{
+  margin:auto;
+  text-align:center;
+}
